@@ -2,6 +2,8 @@
   import mvc from '$lib/assets/mvc.jpg';
 </script>
 
+<h1>About MVC</h1>
+
 <div>
   <img alt="" src={mvc} />
 </div>
@@ -15,3 +17,10 @@
   <p>The skeleton for Michael’s stories began forming as early as 14 years old. He wondered what the future held for humanity, and whether we would travel into space. Idolizing Ursula K. LeGuin, Isaac Asimov, and C.S. Friedman, he followed humanity into the future and a combination of science fiction/fantasy elements trickled into the resulting stories.</p>
   <p>Outside of writing, Michael bicycles, runs, and lifts weights. He’s also been running a Dungeons & Dragons campaign for over 20 years with his unruly and – let’s say imaginitive – friends. He and his wife were on a curious journey sparked by infertility as they tried to expand their family. As well, Michael has a condition that makes him hard-of-hearing and sometimes deaf. Those elements have found their ways into his stories.</p>
 </blockquote>
+
+<style>
+  img {
+    margin: auto;
+    width: 260px;
+  }
+</style>

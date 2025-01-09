@@ -2,6 +2,8 @@
   import fcoe from '$lib/assets/fcoe.jpg';
 </script>
 
+<h1>MVC's stories</h1>
+
 <div>
   <img alt="Cover artwork for Fractured Children of Earth. (Cropped.)" src={fcoe} />
 </div>

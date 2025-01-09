@@ -2,13 +2,15 @@
   import construction from '$lib/assets/construction.gif';
 </script>
 
+<h1>Author Michael V. Colianna's site</h1>
+
 <div>
   <img alt="Tacky clipart indicating under construction." src={construction} />
 </div>
 
 <p>Welcome to my site! It is a work in progress so please excuse our dust!</p>
 
-<p><strong>YES, that's right, kids:</strong> My site has officially gone "old school". Now if I could just get the Sugar Hill Gant over here, maybe I could be "hip-hop" as well? Time to keep dreaming.</p>
+<p><strong>YES, that's right, kids:</strong> My site has officially gone "old school". Now if I could just get the Sugar Hill Gang over here, maybe I could be "hip-hop" as well? Time to keep dreaming.</p>
 
 <p>This site probably looks best in Internet Explorer. (Kidding.)</p>
 
@@ -20,3 +22,10 @@
   <li>AOL Instant Messenger: <strong>MekinWakko</strong> (true facts from back in the day!)</li>
   <li>Bluesky: <a class="bold" href="https://bsky.app/profile/mvc.ink" rel="noopener noreferrer">@mvc.ink</a></li>
 </ul>
+
+<style>
+  img {
+    margin: auto;
+    width: 260px;
+  }
+</style>

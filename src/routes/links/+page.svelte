@@ -3,8 +3,10 @@
   import ring from '$lib/assets/ring.gif';
 </script>
 
+<h1>Lanks</h1>
+
 <div>
-  <img alt="Tacky clipart of a globe with a search bar wrapping around it, with a pointer icon." src={globe} />
+  <img id="globe" alt="Tacky clipart of a globe with a search bar wrapping around it, with a pointer icon." src={globe} />
 </div>
 
 <p>
@@ -13,3 +15,10 @@
     Check out the web ring!
   </a>
 </p>
+
+<style>
+  #globe {
+    margin: auto;
+    width: 260px;
+  }
+</style>

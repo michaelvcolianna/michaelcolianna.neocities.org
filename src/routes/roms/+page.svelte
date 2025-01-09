@@ -2,6 +2,8 @@
   import emulation from '$lib/assets/emulation.jpg';
 </script>
 
+<h1>Emulation & ROMs</h1>
+
 <div>
   <img alt="Several old video game systems." src={emulation} />
 </div>
