@@ -4,6 +4,10 @@
   let { children } = $props();
 </script>
 
+<svelte:head>
+  <meta name="robots" content="noai, noimageai" />
+</svelte:head>
+
 <div class="wrap">
   <header>
     <div class="logo">
@@ -33,6 +37,21 @@
 
   <main>
     {@render children()}
+
+    <div id="counter">
+      <a href="https://www.free-website-hit-counter.com"
+        ><img
+          src="https://www.free-website-hit-counter.com/zc.php?d=6&id=3561&s=1"
+          border="0"
+          alt="Free Website Hit Counter"
+        /></a
+      ><br /><small
+        ><a
+          href="https://www.free-website-hit-counter.com"
+          title="Free Website Hit Counter">Free website hit counter</a
+        ></small
+      >
+    </div>
   </main>
 </div>
 
@@ -89,5 +108,9 @@
 
   main {
     order: 1;
+  }
+
+  #counter {
+    margin-top: 24px;
   }
 </style>

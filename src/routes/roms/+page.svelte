@@ -2,7 +2,11 @@
   import emulation from '$lib/assets/emulation.jpg';
 </script>
 
-<h1>Emulation & ROMs</h1>
+<svelte:head>
+  <title>R0mZ | Author Michael V. Colianna</title>
+</svelte:head>
+
+<h1>Emulation &amp; ROMs</h1>
 
 <div>
   <img alt="Several old video game systems." src={emulation} />

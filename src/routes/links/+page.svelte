@@ -3,6 +3,10 @@
   import ring from '$lib/assets/ring.gif';
 </script>
 
+<svelte:head>
+  <title>Links | Author Michael V. Colianna</title>
+</svelte:head>
+
 <h1>Lanks</h1>
 
 <div>

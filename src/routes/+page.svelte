@@ -2,6 +2,10 @@
   import construction from '$lib/assets/construction.gif';
 </script>
 
+<svelte:head>
+  <title>Author Michael V. Colianna's site</title>
+</svelte:head>
+
 <h1>Author Michael V. Colianna's site</h1>
 
 <div>

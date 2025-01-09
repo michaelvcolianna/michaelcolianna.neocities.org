@@ -2,6 +2,10 @@
   import mvc from '$lib/assets/mvc.jpg';
 </script>
 
+<svelte:head>
+  <title>About | Author Michael V. Colianna</title>
+</svelte:head>
+
 <h1>About MVC</h1>
 
 <div>

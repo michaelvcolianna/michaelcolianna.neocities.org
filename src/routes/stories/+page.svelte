@@ -2,6 +2,10 @@
   import fcoe from '$lib/assets/fcoe.jpg';
 </script>
 
+<svelte:head>
+  <title>Stories | Author Michael V. Colianna</title>
+</svelte:head>
+
 <h1>MVC's stories</h1>
 
 <div>
