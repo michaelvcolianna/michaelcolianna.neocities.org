@@ -1,6 +1,6 @@
 <script>
+  import ExternalLink from '$lib/components/ExternalLink.svelte';
   import globe from '$lib/assets/globe.png';
-  import ring from '$lib/assets/ring.gif';
 </script>
 
 <svelte:head>
@@ -10,19 +10,57 @@
 <h1>Lanks</h1>
 
 <div>
-  <img id="globe" alt="Tacky clipart of a globe with a search bar wrapping around it, with a pointer icon." src={globe} />
+  <img
+    id="globe"
+    alt="Tacky clipart of a globe with a search bar wrapping around it, with a pointer icon."
+    src={globe}
+  />
 </div>
 
 <p>
-  <a href="https://runwithskizzers.neocities.org/web-ring" rel="noopener noreferrer">
-    <img alt="Neocities official author web ring." src={ring} />
-    Check out the web ring!
-  </a>
+  These are some cool pages you should check out! Come back here often, as this
+  list will grow.
 </p>
+
+<ul>
+  <li>
+    <ExternalLink href="https://fiyahlitmag.com/">FIYAH</ExternalLink> - An awesome
+    spec fic magazine.
+  </li>
+
+  <li>
+    <ExternalLink href="https://kiwisbybeat.net/">Kiwis By Beat!</ExternalLink> -
+    A fan archive of comics by Ryan Armand, the creator of "minus."
+  </li>
+
+  <li>
+    <ExternalLink href="https://indiosyncrasy.com/">Indiosyncrasy</ExternalLink>
+    - A great site with reviews & profiles for indie authors.
+  </li>
+
+  <li>
+    <ExternalLink href="https://runwithskizzers.neocities.org/"
+      >Preeti Chhibber</ExternalLink
+    >
+    - Preeti is the one who pointed out NeoCities &amp; got me excited to make this
+    old school site.
+  </li>
+
+  <li>
+    <ExternalLink href="https://startingoffwrite.com/"
+      >Starting Off Write</ExternalLink
+    >
+    - A cool writing group I joined to help motivate me.
+  </li>
+</ul>
 
 <style>
   #globe {
     margin: auto;
     width: 260px;
+  }
+
+  li {
+    margin: 18px 0;
   }
 </style>

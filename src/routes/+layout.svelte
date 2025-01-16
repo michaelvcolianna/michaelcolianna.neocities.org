@@ -1,4 +1,5 @@
 <script>
+  import ExternalLink from '$lib/components/ExternalLink.svelte';
   import '../app.css';
 
   let { children } = $props();
@@ -39,16 +40,18 @@
     {@render children()}
 
     <div id="counter">
-      <a href="https://www.free-website-hit-counter.com"
+      <ExternalLink href="https://www.free-website-hit-counter.com"
         ><img
           src="https://www.free-website-hit-counter.com/zc.php?d=6&id=3561&s=1"
           border="0"
           alt="Free Website Hit Counter"
-        /></a
-      ><br /><small
-        ><a
-          href="https://www.free-website-hit-counter.com"
-          title="Free Website Hit Counter">Free website hit counter</a
+          id="counter-image"
+        /></ExternalLink
+      >
+      <br />
+      <small
+        ><ExternalLink href="https://www.free-website-hit-counter.com"
+          >Free website hit counter</ExternalLink
         ></small
       >
     </div>
@@ -112,5 +115,10 @@
 
   #counter {
     margin-top: 24px;
+    text-align: center;
+  }
+
+  #counter-image {
+    margin: auto;
   }
 </style>
