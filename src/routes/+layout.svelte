@@ -175,6 +175,7 @@
     border: 1px solid var(--color-white);
     box-shadow: 0 0 2px 2px var(--color-grey);
     display: flex;
+    font-size: calc(var(--spacing) * 0.75);
     height: calc(var(--spacing) * 3);
     margin-bottom: calc(var(--spacing) * 2);
     padding: 0 var(--spacing);
