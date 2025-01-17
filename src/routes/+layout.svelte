@@ -1,4 +1,5 @@
 <script>
+  import { building } from '$app/environment';
   import ExternalLink from '$lib/components/ExternalLink.svelte';
   import IeLogo from '$lib/assets/ie-logo.gif';
   import MvcTitle from '$lib/assets/mvc-title.png';
@@ -69,22 +70,24 @@
       />
     </div>
 
-    <div id="counter">
-      <ExternalLink href="https://www.free-website-hit-counter.com"
-        ><img
-          src="https://www.free-website-hit-counter.com/zc.php?d=6&id=3561&s=1"
-          border="0"
-          alt="Free Website Hit Counter"
-          id="counter-image"
-        /></ExternalLink
-      >
+    {#if building}
+      <div id="counter">
+        <ExternalLink href="https://www.free-website-hit-counter.com"
+          ><img
+            src="https://www.free-website-hit-counter.com/zc.php?d=6&id=3561&s=1"
+            border="0"
+            alt="Free Website Hit Counter"
+            id="counter-image"
+          /></ExternalLink
+        >
 
-      <small
-        ><ExternalLink href="https://www.free-website-hit-counter.com"
-          >Free website hit counter</ExternalLink
-        ></small
-      >
-    </div>
+        <small
+          ><ExternalLink href="https://www.free-website-hit-counter.com"
+            >Free website hit counter</ExternalLink
+          ></small
+        >
+      </div>
+    {/if}
   </main>
 
   <footer>
