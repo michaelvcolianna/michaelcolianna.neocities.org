@@ -8,7 +8,7 @@
 
 <li>
   {#if isNew}
-    <img alt="New" src={New} height="21" width="32" />
+    <img alt="New." src={New} height="21" width="32" />
   {/if}
 
   <time datetime={isoDate}>{date}</time>

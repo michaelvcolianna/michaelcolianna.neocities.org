@@ -27,9 +27,9 @@
 <p>Welcome to my site! It is a work in progress so please excuse our dust!</p>
 
 <div id="hammer">
-  <img alt="MC Hammer dancing" src={Mchammer} height="82" width="56" />
-  <img alt="" src={Mchammer} height="82" width="56" />
-  <img alt="" src={Mchammer} height="82" width="56" />
+  <img alt="MC Hammer dancing." src={Mchammer} height="82" width="56" />
+  <img aria-hidden="true" alt="" src={Mchammer} height="82" width="56" />
+  <img aria-hidden="true" alt="" src={Mchammer} height="82" width="56" />
 </div>
 
 <p>
@@ -49,19 +49,19 @@
 
 <ul>
   <li>
-    <img class="floaty" alt="Email" src={Emailme} height="50" width="50" />
+    <img class="floaty" alt="Email." src={Emailme} height="50" width="50" />
     <strong>info@mvc.ink</strong>
   </li>
 
   <li>
-    <img class="floaty" alt="ICQ" src={Icq} height="50" width="50" />
+    <img class="floaty" alt="ICQ." src={Icq} height="50" width="50" />
     <strong>7029668</strong> (found it in an old notebook, but ICQ is gone)
   </li>
 
   <li>
     <img
       class="floaty"
-      alt="AOL Instant Messenger"
+      alt="AOL Instant Messenger."
       src={Aim}
       height="50"
       width="50"
@@ -70,7 +70,7 @@
   </li>
 
   <li>
-    <img class="floaty" alt="Bluesky" src={Bsky} height="50" width="50" />
+    <img class="floaty" alt="Bluesky." src={Bsky} height="50" width="50" />
     <strong
       ><ExternalLink href="https://bsky.app/profile/mvc.ink"
         >@mvc.ink</ExternalLink

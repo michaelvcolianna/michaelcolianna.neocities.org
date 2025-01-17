@@ -20,7 +20,7 @@
 </div>
 
 <p>
-  <img class="floaty" alt="HOT" src={Hot} />
+  <img class="floaty" alt="HOT." src={Hot} />
   That's part of the cover of my book, <ExternalLink
     href="https://bookshop.org/p/books/fractured-children-of-earth-michael-v-colianna/20609336"
     >Fractured Children of Earth</ExternalLink

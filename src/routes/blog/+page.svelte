@@ -37,7 +37,7 @@
 
 <div>
   <a href="/feed.xml">
-    <img alt="Subscribe via RSS" src={Rss} height="15" width="80" />
+    <img alt="Subscribe via RSS." src={Rss} height="15" width="80" />
   </a>
 </div>
 

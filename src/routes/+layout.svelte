@@ -7,6 +7,7 @@
   import Noframes from '$lib/assets/noframes.gif';
   import Notepad from '$lib/assets/notepad.gif';
   import NsLogo from '$lib/assets/ns-logo.gif';
+  import { onMount } from 'svelte';
   import { page } from '$app/state';
   import { PUBLIC_APP_MODE } from '$env/static/public';
   import Quicktime from '$lib/assets/quicktime.gif';
@@ -23,6 +24,17 @@
   ];
 
   const building = PUBLIC_APP_MODE === 'prod';
+
+  let bannerAd;
+
+  const images = import.meta.glob('../../static/banners/*');
+  const bannerAds = Object.keys(images);
+
+  onMount(() => {
+    const bannerAdSrc = bannerAds[Math.floor(Math.random() * bannerAds.length)];
+
+    bannerAd.src = bannerAdSrc.replace('../../static', '');
+  });
 </script>
 
 <svelte:head>
@@ -41,7 +53,7 @@
 
 <div class="wrap">
   <header>
-    <img alt="Michael V. Colianna" src={MvcTitle} height="188" width="626" />
+    <img alt="Michael V. Colianna." src={MvcTitle} height="188" width="626" />
 
     <nav>
       {#each links as link}
@@ -54,18 +66,18 @@
     {@render children()}
 
     <div id="icons">
-      <img alt="Internet Explorer badge" src={IeLogo} height="31" width="88" />
-      <img alt="Netscape Navigator badge" src={NsLogo} height="31" width="88" />
+      <img alt="Internet Explorer badge." src={IeLogo} height="31" width="88" />
+      <img alt="Netscape Navigator badge." src={NsLogo} height="31" width="88" />
       <img
-        alt="Campaign against frames badge"
+        alt="Campaign against frames badge."
         src={Noframes}
         height="31"
         width="87"
       />
-      <img alt="Made with Notepad badge" src={Notepad} height="31" width="82" />
-      <img alt="Quicktime badge" src={Quicktime} height="31" width="88" />
+      <img alt="Made with Notepad badge." src={Notepad} height="31" width="82" />
+      <img alt="Quicktime badge." src={Quicktime} height="31" width="88" />
       <img
-        alt="Hosted by Neocities badge"
+        alt="Hosted by Neocities badge."
         src={Neocities}
         height="31"
         width="105"
@@ -78,7 +90,7 @@
           ><img
             src="https://www.free-website-hit-counter.com/zc.php?d=6&id=3561&s=1"
             border="0"
-            alt="Free Website Hit Counter"
+            alt="Free Website Hit Counter."
             id="counter-image"
           /></ExternalLink
         >
@@ -98,6 +110,11 @@
       <a href="mailto:info@mvc.ink">Contact</a>
     </div>
   </footer>
+
+  <div id="fake-banner-ad">
+    <span>Fake banner ad:</span>
+    <img bind:this={bannerAd} alt="A random, fake banner ad." src />
+  </div>
 </div>
 
 <style>
@@ -161,6 +178,22 @@
   }
 
   #counter-image {
+    margin: auto;
+  }
+
+  #fake-banner-ad {
+    font-size: calc(var(--spacing) * 0.75);
+    margin-bottom: var(--spacing);
+    min-height: 75px;
+    text-align: center;
+  }
+
+  #fake-banner-ad span {
+    display: block;
+    margin-bottom: calc(var(--spacing) * 0.5);
+  }
+
+  #fake-banner-ad img {
     margin: auto;
   }
 </style>

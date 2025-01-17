@@ -8,7 +8,7 @@
 
 <h1>About MVC</h1>
 
-<div>
+<div aria-hidden="true">
   <img alt="" src={Mvc} height="260" width="260" />
 </div>
 
