@@ -1,5 +1,4 @@
 <script>
-  import { building } from '$app/environment';
   import ExternalLink from '$lib/components/ExternalLink.svelte';
   import IeLogo from '$lib/assets/ie-logo.gif';
   import MvcTitle from '$lib/assets/mvc-title.png';
@@ -67,30 +66,26 @@
         width="105"
       />
     </div>
+
+    <div id="counter">
+      <ExternalLink href="https://www.free-website-hit-counter.com"
+        ><img
+          src="https://www.free-website-hit-counter.com/zc.php?d=6&id=3561&s=1"
+          border="0"
+          alt="Free Website Hit Counter"
+          id="counter-image"
+        /></ExternalLink
+      >
+
+      <small
+        ><ExternalLink href="https://www.free-website-hit-counter.com"
+          >Free website hit counter</ExternalLink
+        ></small
+      >
+    </div>
   </main>
 
   <footer>
-    {#if building}
-      <div id="counter">
-        <ExternalLink href="https://www.free-website-hit-counter.com"
-          ><img
-            src="https://www.free-website-hit-counter.com/zc.php?d=6&id=3561&s=1"
-            border="0"
-            alt="Free Website Hit Counter"
-            id="counter-image"
-          /></ExternalLink
-        >
-
-        <small
-          ><ExternalLink href="https://www.free-website-hit-counter.com"
-            >Free website hit counter</ExternalLink
-          ></small
-        >
-      </div>
-
-      <hr />
-    {/if}
-
     <div class="copyright">
       &copy; 2017-{new Date().getFullYear()} - Michael V. Colianna -
       <a href="mailto:info@mvc.ink">Contact</a>
@@ -153,6 +148,7 @@
   }
 
   #counter {
+    margin-bottom: 24px;
     margin-top: 24px;
     text-align: center;
   }
