@@ -1,6 +1,9 @@
 <script>
+  import AolSucks from '$lib/assets/aol-sucks.gif';
   import ExternalLink from '$lib/components/ExternalLink.svelte';
   import IeLogo from '$lib/assets/ie-logo.gif';
+  import Madeonamac from '$lib/assets/madeonamac.gif';
+  import Mirc from '$lib/assets/mirc.gif';
   import MvcTitle from '$lib/assets/mvc-title.png';
   import NavLink from '$lib/components/NavLink.svelte';
   import Neocities from '$lib/assets/neocities.png';
@@ -11,6 +14,8 @@
   import { page } from '$app/state';
   import { PUBLIC_APP_MODE } from '$env/static/public';
   import Quicktime from '$lib/assets/quicktime.gif';
+  import Realplayer from '$lib/assets/realplayer.gif';
+  import Winamp from '$lib/assets/winamp.gif';
   import '../app.css';
 
   let { children } = $props();
@@ -68,6 +73,7 @@
     <div id="icons">
       <img alt="Internet Explorer badge." src={IeLogo} height="31" width="88" />
       <img alt="Netscape Navigator badge." src={NsLogo} height="31" width="88" />
+      <img alt="AOL sucks, get a real ISP badge." src={AolSucks} height="31" width="88" />
       <img
         alt="Campaign against frames badge."
         src={Noframes}
@@ -75,7 +81,10 @@
         width="87"
       />
       <img alt="Made with Notepad badge." src={Notepad} height="31" width="82" />
+      <img alt="Realplayer badge." src={Realplayer} height="31" width="88" />
       <img alt="Quicktime badge." src={Quicktime} height="31" width="88" />
+      <img alt="Made on a Mac badge." src={Madeonamac} height="31" width="88" />
+      <img alt="mIRC badge." src={Mirc} height="31" width="88" />
       <img
         alt="Hosted by Neocities badge."
         src={Neocities}
