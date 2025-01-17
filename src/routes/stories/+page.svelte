@@ -1,6 +1,7 @@
 <script>
   import ExternalLink from '$lib/components/ExternalLink.svelte';
-  import fcoe from '$lib/assets/fcoe.jpg';
+  import Fcoe from '$lib/assets/fcoe.jpg';
+  import Hot from '$lib/assets/hot.gif';
 </script>
 
 <svelte:head>
@@ -12,11 +13,14 @@
 <div>
   <img
     alt="Cover artwork for Fractured Children of Earth. (Cropped.)"
-    src={fcoe}
+    src={Fcoe}
+    height="313"
+    width="626"
   />
 </div>
 
 <p>
+  <img class="floaty" alt="HOT" src={Hot} />
   That's part of the cover of my book, <ExternalLink
     href="https://bookshop.org/p/books/fractured-children-of-earth-michael-v-colianna/20609336"
     >Fractured Children of Earth</ExternalLink
@@ -66,3 +70,22 @@
     by James S.A. Corey, and the "Andor" television show.</em
   >
 </p>
+
+<div id="ending"></div>
+
+<style>
+  .floaty {
+    float: left;
+    margin-right: calc(var(--spacing) * 0.5);
+  }
+
+  blockquote {
+    border-left: 2px solid var(--color-white);
+    margin: 0;
+    padding-left: calc(var(--spacing) * 2);
+  }
+
+  #ending {
+    padding-bottom: var(--spacing);
+  }
+</style>

@@ -1,116 +1,155 @@
 <script>
+  import { building } from '$app/environment';
   import ExternalLink from '$lib/components/ExternalLink.svelte';
+  import IeLogo from '$lib/assets/ie-logo.gif';
+  import MvcTitle from '$lib/assets/mvc-title.png';
+  import NavLink from '$lib/components/NavLink.svelte';
+  import Neocities from '$lib/assets/neocities.png';
+  import Noframes from '$lib/assets/noframes.gif';
+  import NsLogo from '$lib/assets/ns-logo.gif';
+  import { page } from '$app/state';
+  import Quicktime from '$lib/assets/quicktime.gif';
   import '../app.css';
 
   let { children } = $props();
+
+  const links = [
+    { href: '/', label: 'Main page' },
+    { href: '/about', label: 'About me' },
+    { href: '/stories', label: 'My stories' },
+    { href: '/roms', label: 'ROM central' },
+    { href: '/links', label: 'Cool links' }
+  ];
 </script>
 
 <svelte:head>
+  <meta
+    property="og:description"
+    content="The super cool old school website for author Michael V. Colianna."
+  />
+  <meta
+    property="og:image"
+    content="https://michaelcolianna.neocities.org/mvc-og.png"
+  />
   <meta name="robots" content="noai, noimageai" />
 </svelte:head>
 
+<a href="#content">Skip to content</a>
+
 <div class="wrap">
   <header>
-    <div class="logo">
-      <div>mvc</div>
-      <div id="ink">.ink</div>
-    </div>
-
-    <hr />
+    <img alt="Michael V. Colianna" src={MvcTitle} height="188" width="626" />
 
     <nav>
-      <a href="/">main</a>
-      <a href="/stories">stories</a>
-      <a href="/about">about</a>
-      <a href="/roms">roms</a>
-      <a href="/links">links</a>
+      {#each links as link}
+        <NavLink {link} />
+      {/each}
     </nav>
-
-    <hr />
-
-    <div class="copyright">
-      <div>&copy; 2025</div>
-      <div>mvc.ink</div>
-    </div>
-
-    <a href="mailto:info@mvc.ink">contact</a>
   </header>
 
-  <main>
+  <main id="content">
     {@render children()}
 
-    <div id="counter">
-      <ExternalLink href="https://www.free-website-hit-counter.com"
-        ><img
-          src="https://www.free-website-hit-counter.com/zc.php?d=6&id=3561&s=1"
-          border="0"
-          alt="Free Website Hit Counter"
-          id="counter-image"
-        /></ExternalLink
-      >
-      <br />
-      <small
-        ><ExternalLink href="https://www.free-website-hit-counter.com"
-          >Free website hit counter</ExternalLink
-        ></small
-      >
+    <div id="icons">
+      <img alt="Internet Explorer badge" src={IeLogo} height="31" width="88" />
+      <img alt="Netscape Navigator badge" src={NsLogo} height="31" width="88" />
+      <img
+        alt="Campaign against frames badge"
+        src={Noframes}
+        height="31"
+        width="87"
+      />
+      <img alt="Quicktime badge" src={Quicktime} height="31" width="88" />
+      <img
+        alt="Hosted by Neocities badge"
+        src={Neocities}
+        height="31"
+        width="105"
+      />
     </div>
   </main>
+
+  <footer>
+    {#if building}
+      <div id="counter">
+        <ExternalLink href="https://www.free-website-hit-counter.com"
+          ><img
+            src="https://www.free-website-hit-counter.com/zc.php?d=6&id=3561&s=1"
+            border="0"
+            alt="Free Website Hit Counter"
+            id="counter-image"
+          /></ExternalLink
+        >
+
+        <small
+          ><ExternalLink href="https://www.free-website-hit-counter.com"
+            >Free website hit counter</ExternalLink
+          ></small
+        >
+      </div>
+
+      <hr />
+    {/if}
+
+    <div class="copyright">
+      &copy; 2017-{new Date().getFullYear()} - Michael V. Colianna -
+      <a href="mailto:info@mvc.ink">Contact</a>
+    </div>
+  </footer>
 </div>
 
 <style>
+  [href='#content'] {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    left: -9999px;
+    opacity: 0;
+    padding: var(--spacing);
+    position: absolute;
+    z-index: 999;
+  }
+
+  [href='#content']:focus {
+    left: var(--spacing);
+    opacity: 1;
+    transform: translateX(var(--spacing));
+  }
+
   .wrap {
-    display: grid;
-    grid-template-columns: 1fr 84px;
-    gap: 12px;
     margin: auto;
     max-width: 626px;
   }
 
   header {
-    background-color: var(--color-olive);
-    font-weight: bold;
-    min-height: 85vh;
-    order: 2;
-    padding: 12px;
-    text-align: center;
-  }
-
-  .logo {
-    font-size: 28px;
-  }
-
-  #ink {
-    color: var(--color-white);
-    -webkit-text-stroke: 2px var(--color-black);
-    text-transform: uppercase;
-  }
-
-  hr {
-    border-color: var(--color-forest);
-    border-style: solid;
+    display: grid;
+    gap: var(--spacing);
   }
 
   nav {
-    display: grid;
-    gap: 12px;
-  }
-
-  a {
-    align-items: center;
+    background-color: var(--color-black);
+    border: 1px solid var(--color-white);
+    box-shadow: 0 0 2px 2px var(--color-grey);
     display: flex;
-    color: var(--color-black);
-    height: 20px;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
-  .copyright {
-    font-size: 18px;
-    margin-bottom: 6px;
+  #icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--spacing) * 0.5);
+    margin-bottom: var(--spacing);
   }
 
-  main {
-    order: 1;
+  footer {
+    align-items: center;
+    background-color: var(--color-black);
+    border: 1px solid var(--color-white);
+    box-shadow: 0 0 2px 2px var(--color-grey);
+    display: flex;
+    height: calc(var(--spacing) * 3);
+    margin-bottom: calc(var(--spacing) * 2);
+    padding: 0 var(--spacing);
   }
 
   #counter {

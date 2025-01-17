@@ -1,26 +1,49 @@
 :root {
   --color-black: #000000;
-  --color-forest: #336633;
-  --color-mint: #99cc99;
-  --color-olive: #669966;
+  --color-blue: #0033ff;
+  --color-green: #33ff00;
+  --color-grey: #666666;
+  --color-purple: #cc00ff;
+  --color-red: #ff0033;
+  --color-yellow: #ffff00;
   --color-white: #ffffff;
+  --spacing: 16px;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
 body {
-  background-color: var(--color-mint);
-  color: var(--color-black);
-  font-family: 'Arial', 'Helvetica', sans-serif;
-  font-size: 12px;
+  background: var(--color-black) url('$lib/assets/space.jpg');
+  color: var(--color-white);
+  font-family: 'Comic Sans', 'Comic Sans MS', 'Chalkboard',
+    'ChalkboardSE-Regular', 'Marker Felt', 'Purisa', 'URW Chancery L', cursive,
+    sans-serif;
+  font-size: var(--spacing);
   margin: 0;
-  padding: 12px;
+  padding: var(--spacing);
+}
+
+a,
+a:active,
+a:visited {
+  color: var(--color-yellow);
+}
+
+a:focus,
+a:hover {
+  color: var(--color-purple);
 }
 
 img {
   display: block;
   height: auto;
   max-width: 100%;
+}
+
+.clearfix {
+  clear: both;
 }

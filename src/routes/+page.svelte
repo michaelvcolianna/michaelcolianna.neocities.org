@@ -1,7 +1,12 @@
 <script>
+  import Aim from '$lib/assets/aim.gif';
+  import Bsky from '$lib/assets/bsky.gif';
+  import Construction from '$lib/assets/construction.gif';
+  import Emailme from '$lib/assets/emailme.gif';
   import ExternalLink from '$lib/components/ExternalLink.svelte';
-  import construction from '$lib/assets/construction.gif';
-  import ring from '$lib/assets/ring.gif';
+  import Icq from '$lib/assets/icq.gif';
+  import Mchammer from '$lib/assets/mchammer.gif';
+  import Ring from '$lib/assets/ring.gif';
 </script>
 
 <svelte:head>
@@ -11,10 +16,21 @@
 <h1>Author Michael V. Colianna's site</h1>
 
 <div>
-  <img alt="Tacky clipart indicating under construction." src={construction} />
+  <img
+    alt="Tacky clipart indicating under construction."
+    src={Construction}
+    height="51"
+    width="574"
+  />
 </div>
 
 <p>Welcome to my site! It is a work in progress so please excuse our dust!</p>
+
+<div id="hammer">
+  <img alt="MC Hammer dancing" src={Mchammer} height="82" width="56" />
+  <img alt="" src={Mchammer} height="82" width="56" />
+  <img alt="" src={Mchammer} height="82" width="56" />
+</div>
 
 <p>
   <strong>YES, that's right, kids:</strong> My site has officially gone "old school".
@@ -22,28 +38,40 @@
   as well? Time to keep dreaming.
 </p>
 
-<p>This site probably looks best in Internet Explorer. (Kidding.)</p>
-
 <p id="webring">
   <ExternalLink href="https://runwithskizzers.neocities.org/web-ring">
-    <img alt="Neocities official author web ring." src={ring} />
-    Check out the web ring!
+    <img alt="Neocities official author web ring." src={Ring} />
+    Check out this cool web ring!
   </ExternalLink>
 </p>
 
 <p>There are a few ways to get in touch with me:</p>
 
 <ul>
-  <li>Email: <strong>info@mvc.ink</strong></li>
   <li>
-    ICQ: <strong>7029668</strong> (found it in an old notebook, but ICQ is gone)
+    <img class="floaty" alt="Email" src={Emailme} height="50" width="50" />
+    <strong>info@mvc.ink</strong>
   </li>
+
   <li>
-    AOL Instant Messenger: <strong>MekinWakko</strong> (true facts from back in the
-    day!)
+    <img class="floaty" alt="ICQ" src={Icq} height="50" width="50" />
+    <strong>7029668</strong> (found it in an old notebook, but ICQ is gone)
   </li>
+
   <li>
-    Bluesky: <strong
+    <img
+      class="floaty"
+      alt="AOL Instant Messenger"
+      src={Aim}
+      height="50"
+      width="50"
+    />
+    <strong>MekinWakko</strong> (true facts from back in the day!)
+  </li>
+
+  <li>
+    <img class="floaty" alt="Bluesky" src={Bsky} height="50" width="50" />
+    <strong
       ><ExternalLink href="https://bsky.app/profile/mvc.ink"
         >@mvc.ink</ExternalLink
       ></strong
@@ -51,13 +79,39 @@
   </li>
 </ul>
 
+<div class="clearfix"></div>
+
 <style>
-  img {
+  #hammer {
+    display: flex;
     margin: auto;
-    width: 260px;
+    width: 168px;
+  }
+
+  ul {
+    display: grid;
+    gap: var(--spacing);
+  }
+
+  li {
+    clear: both;
+  }
+
+  .floaty {
+    float: left;
+    margin-right: calc(var(--spacing) * 0.5);
   }
 
   #webring {
     text-align: center;
+  }
+
+  #webring img {
+    margin: auto;
+    max-width: 313px;
+  }
+
+  .clearfix {
+    padding-top: calc(var(--spacing) * 2);
   }
 </style>

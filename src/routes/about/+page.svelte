@@ -1,5 +1,5 @@
 <script>
-  import mvc from '$lib/assets/mvc.jpg';
+  import Mvc from '$lib/assets/mvc.jpg';
 </script>
 
 <svelte:head>
@@ -9,7 +9,7 @@
 <h1>About MVC</h1>
 
 <div>
-  <img alt="" src={mvc} />
+  <img alt="" src={Mvc} height="260" width="260" />
 </div>
 
 <p>
@@ -44,9 +44,24 @@
   </p>
 </blockquote>
 
+<div id="ending"></div>
+
 <style>
   img {
+    background-color: var(--color-black);
+    border: 2px solid var(--color-white);
+    box-shadow: 0 0 2px 2px var(--color-grey);
+    border-radius: 260px;
     margin: auto;
-    width: 260px;
+  }
+
+  blockquote {
+    border-left: 2px solid var(--color-white);
+    margin: 0;
+    padding-left: calc(var(--spacing) * 2);
+  }
+
+  #ending {
+    padding-bottom: var(--spacing);
   }
 </style>

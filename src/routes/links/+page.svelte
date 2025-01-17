@@ -1,6 +1,6 @@
 <script>
   import ExternalLink from '$lib/components/ExternalLink.svelte';
-  import globe from '$lib/assets/globe.png';
+  import Globe from '$lib/assets/globe.png';
 </script>
 
 <svelte:head>
@@ -13,7 +13,9 @@
   <img
     id="globe"
     alt="Tacky clipart of a globe with a search bar wrapping around it, with a pointer icon."
-    src={globe}
+    src={Globe}
+    height="216"
+    width="260"
   />
 </div>
 
@@ -54,13 +56,18 @@
   </li>
 </ul>
 
+<div id="ending"></div>
+
 <style>
   #globe {
     margin: auto;
-    width: 260px;
   }
 
   li {
     margin: 18px 0;
+  }
+
+  #ending {
+    padding-bottom: var(--spacing);
   }
 </style>
