@@ -1,18 +1,22 @@
 <script>
+  import BlogLink from '$lib/components/BlogLink.svelte';
   import Emulation from '$lib/assets/emulation.jpg';
 </script>
 
 <svelte:head>
-  <title>R0mZ | Author Michael V. Colianna</title>
+  <title>R0mZ (Da Blog) | Author Michael V. Colianna</title>
 </svelte:head>
 
 <h1>Emulation &amp; ROMs</h1>
 
 <div>
-  <img alt="Several old video game systems." src={Emulation} height="268" widht="626" />
+  <img
+    alt="Several old video game systems."
+    src={Emulation}
+    height="268"
+    widht="626"
+  />
 </div>
-
-<p>Wait.</p>
 
 <p>You didn't really think I was going to have ROMs here, right?</p>
 
@@ -21,10 +25,24 @@
   it'd be funny to put this link here. Sorry to disappoint!
 </p>
 
+<p>This is, however, da BLOG:</p>
+
+<ul id="blog">
+  <BlogLink date="2025-01-17" href="/my-first-post" isNew={true}
+    >My first post</BlogLink
+  >
+</ul>
+
 <div id="ending"></div>
 
 <style>
+  #blog {
+    display: grid;
+    gap: var(--spacing);
+  }
+
   #ending {
+    clear: both;
     padding-bottom: var(--spacing);
   }
 </style>

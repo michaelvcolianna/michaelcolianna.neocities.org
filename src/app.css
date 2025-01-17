@@ -47,3 +47,7 @@ img {
 .clearfix {
   clear: both;
 }
+
+.ender {
+  padding-top: calc(var(--spacing) * 2);
+}

@@ -5,6 +5,7 @@
   import NavLink from '$lib/components/NavLink.svelte';
   import Neocities from '$lib/assets/neocities.png';
   import Noframes from '$lib/assets/noframes.gif';
+  import Notepad from '$lib/assets/notepad.gif';
   import NsLogo from '$lib/assets/ns-logo.gif';
   import { page } from '$app/state';
   import Quicktime from '$lib/assets/quicktime.gif';
@@ -16,7 +17,7 @@
     { href: '/', label: 'Main page' },
     { href: '/about', label: 'About me' },
     { href: '/stories', label: 'My stories' },
-    { href: '/roms', label: 'ROM central' },
+    { href: '/blog', label: 'ROMs central' },
     { href: '/links', label: 'Cool links' }
   ];
 </script>
@@ -58,6 +59,7 @@
         height="31"
         width="87"
       />
+      <img alt="Made with Notepad badge" src={Notepad} height="31" width="82" />
       <img alt="Quicktime badge" src={Quicktime} height="31" width="88" />
       <img
         alt="Hosted by Neocities badge"
