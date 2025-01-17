@@ -1,5 +1,4 @@
 <script>
-  import { building } from '$app/environment';
   import ExternalLink from '$lib/components/ExternalLink.svelte';
   import IeLogo from '$lib/assets/ie-logo.gif';
   import MvcTitle from '$lib/assets/mvc-title.png';
@@ -9,6 +8,7 @@
   import Notepad from '$lib/assets/notepad.gif';
   import NsLogo from '$lib/assets/ns-logo.gif';
   import { page } from '$app/state';
+  import { PUBLIC_APP_MODE } from '$env/static/public';
   import Quicktime from '$lib/assets/quicktime.gif';
   import '../app.css';
 
@@ -21,6 +21,8 @@
     { href: '/blog', label: 'ROMs central' },
     { href: '/links', label: 'Cool links' }
   ];
+
+  const building = PUBLIC_APP_MODE === 'prod';
 </script>
 
 <svelte:head>
