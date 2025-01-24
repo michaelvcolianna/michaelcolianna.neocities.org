@@ -8,7 +8,7 @@
 
 <h1>My first blog post</h1>
 
-<BlogDate date="2017-01-17" />
+<BlogDate date="2025-01-17" />
 
 <p>A few days ago, <ExternalLink href="https://bsky.app/profile/runwithskizzers.bsky.social">Preeti Chhibber</ExternalLink> discovered <ExternalLink href="https://neocities.org/">Neocities</ExternalLink>.</p>
 

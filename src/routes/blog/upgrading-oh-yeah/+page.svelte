@@ -9,7 +9,7 @@
 
 <h1>UPGRADING: Oh Yeah!</h1>
 
-<BlogDate date="2017-01-25" />
+<BlogDate date="2025-01-24" />
 
 <p>
   <img
