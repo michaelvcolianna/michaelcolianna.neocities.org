@@ -1,6 +1,6 @@
 <script>
   import ExternalLink from '$lib/components/ExternalLink.svelte';
-  import Fcoe from '$lib/assets/fcoe.jpg';
+  import FcoeBanned from '$lib/assets/fcoe-banned.jpg';
   import Hot from '$lib/assets/hot.gif';
 </script>
 
@@ -12,20 +12,23 @@
 
 <div>
   <img
-    alt="Cover artwork for Fractured Children of Earth. (Cropped.)"
-    src={Fcoe}
-    height="313"
+    alt="A mockup of Fractured Children of Earth with highlights: Disability accessibility, respect for identity, lots of swearing but no slurs; all built into the society; Sign language, body inclusivity, veganism, mental health, infertility awareness, knitting, and gardening, too!; Plus: Disabled characters (MC is Deaf), queer characters, anti-fascism, ACAB; NO AI; ... and a kitty!"
+    src={FcoeBanned}
+    height="470"
     width="626"
   />
 </div>
 
 <p>
-  <img class="floaty" alt="HOT." src={Hot} />
-  <ExternalLink href="https://appendix.mvc.ink"><strong>Already read the book and looking for the appendix?</strong></ExternalLink>
+  <img class="floaty" alt="HOT." src={Hot} height="27" width="55" />
+  <ExternalLink href="https://appendix.mvc.ink"
+    ><strong>Already read the book and looking for the appendix?</strong
+    ></ExternalLink
+  >
 </p>
 
 <p>
-  That's part of the cover of my book, <ExternalLink
+  Above is a neat advertisement I made for my book, <ExternalLink
     href="https://bookshop.org/p/books/fractured-children-of-earth-michael-v-colianna/20609336"
     >Fractured Children of Earth</ExternalLink
   >! The cover is by <ExternalLink href="https://www.artofashesamuels.com/"

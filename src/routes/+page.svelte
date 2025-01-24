@@ -29,7 +29,7 @@
 <p>Welcome to my site! It is a work in progress so please excuse our dust!</p>
 
 <p id="blog">
-  <img alt="" src={Blog} />
+  <img alt="" src={Blog} height="64" width="64" />
   <a href="/blog/upgrading-oh-yeah/">Check out my latest blog post!</a>
 </p>
 
@@ -46,14 +46,26 @@
 </p>
 
 <p>
-  <ExternalLink href="https://indiosyncrasy.com/authorfeature-michaelvcolianna/">
-    <img alt="I'm featured on Indiosyncrasy - for lovers of reading, writing, and discovery." src={Indiosyncrasy} />
+  <ExternalLink
+    href="https://indiosyncrasy.com/authorfeature-michaelvcolianna/"
+  >
+    <img
+      alt="I'm featured on Indiosyncrasy - for lovers of reading, writing, and discovery."
+      src={Indiosyncrasy}
+      height="282"
+      width="626"
+    />
   </ExternalLink>
 </p>
 
 <p id="webring">
   <ExternalLink href="https://runwithskizzers.neocities.org/web-ring">
-    <img alt="Neocities official author web ring." src={Ring} />
+    <img
+      alt="Neocities official author web ring."
+      src={Ring}
+      height="313"
+      width="313"
+    />
     Check out this cool web ring!
   </ExternalLink>
 </p>
@@ -101,10 +113,6 @@
     gap: var(--spacing);
   }
 
-  #blog img {
-    height: 64px;
-  }
-
   #hammer {
     display: flex;
     margin: auto;
@@ -131,7 +139,6 @@
 
   #webring img {
     margin: auto;
-    max-width: 313px;
   }
 
   .clearfix {
