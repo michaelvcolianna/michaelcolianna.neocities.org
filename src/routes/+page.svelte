@@ -5,6 +5,7 @@
   import Emailme from '$lib/assets/emailme.gif';
   import ExternalLink from '$lib/components/ExternalLink.svelte';
   import Icq from '$lib/assets/icq.gif';
+  import Indiosyncrasy from '$lib/assets/indiosyncrasy.jpg';
   import Mchammer from '$lib/assets/mchammer.gif';
   import Ring from '$lib/assets/ring.gif';
 </script>
@@ -36,6 +37,12 @@
   <strong>YES, that's right, kids:</strong> My site has officially gone "old school".
   Now if I could just get the Sugar Hill Gang over here, maybe I could be "hip-hop"
   as well? Time to keep dreaming.
+</p>
+
+<p id="indiosyncrasy">
+  <ExternalLink href="https://indiosyncrasy.com/authorfeature-michaelvcolianna/">
+    <img alt="I'm featured on Indiosyncrasy - for lovers of reading, writing, and discovery." src={Indiosyncrasy} />
+  </ExternalLink>
 </p>
 
 <p id="webring">
