@@ -1,5 +1,6 @@
 <script>
   import Aim from '$lib/assets/aim.gif';
+  import Blog from '$lib/assets/blog.png';
   import Bsky from '$lib/assets/bsky.gif';
   import Construction from '$lib/assets/construction.gif';
   import Emailme from '$lib/assets/emailme.gif';
@@ -27,6 +28,11 @@
 
 <p>Welcome to my site! It is a work in progress so please excuse our dust!</p>
 
+<p id="blog">
+  <img alt="" src={Blog} />
+  <a href="/blog/upgrading-oh-yeah/">Check out my latest blog post!</a>
+</p>
+
 <div id="hammer">
   <img alt="MC Hammer dancing." src={Mchammer} height="82" width="56" />
   <img aria-hidden="true" alt="" src={Mchammer} height="82" width="56" />
@@ -39,7 +45,7 @@
   as well? Time to keep dreaming.
 </p>
 
-<p id="indiosyncrasy">
+<p>
   <ExternalLink href="https://indiosyncrasy.com/authorfeature-michaelvcolianna/">
     <img alt="I'm featured on Indiosyncrasy - for lovers of reading, writing, and discovery." src={Indiosyncrasy} />
   </ExternalLink>
@@ -89,6 +95,16 @@
 <div class="clearfix"></div>
 
 <style>
+  #blog {
+    align-items: center;
+    display: flex;
+    gap: var(--spacing);
+  }
+
+  #blog img {
+    height: 64px;
+  }
+
   #hammer {
     display: flex;
     margin: auto;

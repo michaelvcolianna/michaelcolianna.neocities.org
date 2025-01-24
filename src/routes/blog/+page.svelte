@@ -30,9 +30,10 @@
 </p>
 
 <ul id="blog">
-  <BlogLink date="2025-01-17" href="/my-first-post" isNew={true}
-    >My first post</BlogLink
+  <BlogLink date="2025-01-24" href="/upgrading-oh-yeah" isNew={true}
+    >UPGRADING: Oh Yeah!</BlogLink
   >
+  <BlogLink date="2025-01-17" href="/my-first-post">My first post</BlogLink>
 </ul>
 
 <div>

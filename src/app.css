@@ -1,6 +1,7 @@
 :root {
   --color-black: #000000;
   --color-blue: #0033ff;
+  --color-ghost: #aaaaaa;
   --color-green: #33ff00;
   --color-grey: #666666;
   --color-purple: #cc00ff;
@@ -50,4 +51,8 @@ img {
 
 .ender {
   padding-top: calc(var(--spacing) * 2);
+}
+
+code {
+  color: var(--color-ghost);
 }
