@@ -21,6 +21,10 @@
 
 <p>
   <img class="floaty" alt="HOT." src={Hot} />
+  <ExternalLink href="https://appendix.mvc.ink"><strong>Already read the book and looking for the appendix?</strong></ExternalLink>
+</p>
+
+<p>
   That's part of the cover of my book, <ExternalLink
     href="https://bookshop.org/p/books/fractured-children-of-earth-michael-v-colianna/20609336"
     >Fractured Children of Earth</ExternalLink
