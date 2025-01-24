@@ -31,6 +31,13 @@
   </li>
 
   <li>
+    <ExternalLink
+      href="https://gregpak.com/how-and-why-to-make-a-personal-website/"
+      >How to (and why you should) make a personal website</ExternalLink
+    > - Great guide by Greg Pak!
+  </li>
+
+  <li>
     <ExternalLink href="https://kiwisbybeat.net/">Kiwis By Beat!</ExternalLink> -
     A fan archive of comics by Ryan Armand, the creator of "minus."
   </li>
@@ -53,6 +60,13 @@
       >Starting Off Write</ExternalLink
     >
     - A cool writing group I joined to help motivate me.
+  </li>
+
+  <li>
+    <ExternalLink
+      href="https://www.webdesignmuseum.org/exhibitions/web-banners-in-the-90s"
+      >Web Banners in the 90s</ExternalLink
+    > - Did you get a kick out of my footer? Thank these folks!
   </li>
 </ul>
 
