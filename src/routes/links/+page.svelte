@@ -48,6 +48,11 @@
   </li>
 
   <li>
+    <ExternalLink href="https://ooh.directory/">ooh.directory</ExternalLink> - An
+    awesome directory of blogs on all kinds of topics!
+  </li>
+
+  <li>
     <ExternalLink href="https://runwithskizzers.neocities.org/"
       >Preeti Chhibber</ExternalLink
     >

@@ -45,20 +45,20 @@
   as well? Time to keep dreaming.
 </p>
 
-<p>
+<p class="centerimg">
   <ExternalLink
     href="https://indiosyncrasy.com/authorfeature-michaelvcolianna/"
   >
     <img
       alt="I'm featured on Indiosyncrasy - for lovers of reading, writing, and discovery."
       src={Indiosyncrasy}
-      height="282"
-      width="626"
+      height="212"
+      width="470"
     />
   </ExternalLink>
 </p>
 
-<p id="webring">
+<p class="centerimg">
   <ExternalLink href="https://runwithskizzers.neocities.org/web-ring">
     <img
       alt="Neocities official author web ring."
@@ -66,7 +66,7 @@
       height="313"
       width="313"
     />
-    Check out this cool web ring!
+    Check out this other cool web ring!
   </ExternalLink>
 </p>
 
@@ -133,11 +133,11 @@
     margin-right: calc(var(--spacing) * 0.5);
   }
 
-  #webring {
+  .centerimg {
     text-align: center;
   }
 
-  #webring img {
+  .centerimg img {
     margin: auto;
   }
 
