@@ -9,10 +9,13 @@
   import Indiosyncrasy from '$lib/assets/indiosyncrasy.jpg';
   import Mchammer from '$lib/assets/mchammer.gif';
   import Ring from '$lib/assets/ring.gif';
+  import WebRingForDorks from '$lib/assets/web-ring-for-dorks.gif';
 </script>
 
 <svelte:head>
   <title>Author Michael V. Colianna's site</title>
+  <script type="text/javascript" src="https://gregpak.nexus/webring-dorks/onionring-variables.js"></script>
+  <script type="text/javascript" src="https://gregpak.nexus/webring-dorks/onionring-widget.js"></script>
 </svelte:head>
 
 <h1>Author Michael V. Colianna's site</h1>
@@ -57,6 +60,14 @@
     />
   </ExternalLink>
 </p>
+
+<p class="centerimg">
+  <ExternalLink href="https://gregpak.nexus/webring-dorks/">
+    <img alt="Web ring for dorks." src={WebRingForDorks} />
+  </ExternalLink>
+</p>
+
+<div id="dorks"></div>
 
 <p class="centerimg">
   <ExternalLink href="https://runwithskizzers.neocities.org/web-ring">
